@@ -1,0 +1,21 @@
+<!DOCTYPE html>   <!--수식을 문자열로 받아 계산하여 반환-->
+<html>
+<head>
+    <title>script_char_cal</title>
+</head>
+<body>
+    <script>
+        var d=prompt("수식을 입력하세요, = 포함하지 않음.","")   //수식을 문자열로 받는다
+        </script>
+        <h3>수식 계산하기</h3>
+        <hr>
+        <script>
+            if(d==""||d==null){         //입력된 항목 없거나 취소 눌렀을 떄
+                document.write("입력된 수식이 없습니다.");
+            }
+            else{
+            var res = eval(d);      //eval()함수로 문자열 수식 계산하여 res에 저장
+            document.write(d+"="+res);}
+        </script>
+</body>
+</html>

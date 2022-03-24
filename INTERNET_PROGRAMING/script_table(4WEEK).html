@@ -1,0 +1,22 @@
+<!DOCTYPE html>    <!--섭씨온도▶화씨온도 변환 테이블-->
+<html>
+<head>
+    <title>script_table</title>
+</head>
+<body>
+    <table border="1"> 
+        <thead>
+            <tr><th>섭씨온도</th><th>화씨온도</th></tr>  <!--첫줄 thead입력-->
+        </thead>
+        <tbody>
+            <script>
+                for(var i=0;i<11;i++){
+                    var hwaci=i*1.8+32;
+                    document.write("<tr><td>"+i+"</td><td>"+hwaci+"</td><tr>");
+                        // 행과 열마다 공식에 적용한값 넣어주기
+
+                }            </script>
+        </tbody>
+    </table> 
+</body>
+</html>

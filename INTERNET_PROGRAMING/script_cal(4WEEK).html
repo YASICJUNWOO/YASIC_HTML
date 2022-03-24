@@ -1,0 +1,32 @@
+ <!DOCTYPE html>     <!--반복문을 이용한 연산/알림창/입력받기-->
+<html>
+<head>
+    <title>script_cal</title>
+    <script>
+        function hap(ret) {        //hap 함수 선언
+            var sum=0;
+            var m = parseInt(ret);     //parseInt()이용하여 형변환
+            if(m<=100&&m>=0){
+            for(var i=0;i<=m;i++) { 
+                sum+=i;
+            }
+            alert(sum);      //알림창 띄워주기
+        }
+        else if(m>100){
+            alert("정수 "+m+"은 100보다 작지 않습니다.");
+        }
+        else if(m<0){
+            alert(m+"은 정수가 아닙니다.");
+        }
+    }
+        </script>
+</head>
+<body>
+    <script>
+        var ret = prompt("100미만의 정수만 입력:","0");      //prompt()로 입력받아 ret에 저장(문자열로 저장됨)
+        hap(ret);       //hap 함수 호출
+
+
+    </script>
+</body>
+</html>
